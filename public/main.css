@@ -1,3 +1,15 @@
 * {
     border: solid gold;
 }
+
+/* NAV BAR */
+.nav-bar {
+    background-color: gray;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+

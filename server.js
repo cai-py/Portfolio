@@ -46,7 +46,7 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 
 // ROUTES / CONTROLLERS
-// app.get('/', (req, res) => {
+// app.get('/hello', (req, res) => {
 //     res.send('Hello World')
 // })
 
