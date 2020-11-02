@@ -102,8 +102,26 @@ class About extends React.Component {
 class Projects extends React.Component {
     render = () => {
         return (
-            <div className="projects-page">
-                <h1>Projects</h1>
+            <div className="projects-page p-4">
+                <h1 className="text-2xl mb-2">Projects</h1>
+
+                <article className="m-3">
+                    <h1 className="text-xl my-2"></h1>
+                    <p></p>
+                    <a></a> <a></a>
+                </article>
+
+                <article className="m-3">
+                    <h1 className="text-xl my-2">Re-did-it</h1>
+                    <p>This project was a remake of redit that alows you to post pictures with captions.</p>
+                    <a href="https://github.com/cai-py/GA-Project-4">github</a> <a href="https://re-did-it-app.herokuapp.com/">Visit Site</a>
+                </article>
+
+                <article className="m-3">
+                    <h1 className="text-xl my-2">Musique</h1>
+                    <p>This project is a music library project that allows the user to add, view, edit, and delete sheet music.</p>
+                    <a href="https://github.com/cai-py/GA-Project-2">github</a> <a href="https://dry-brushlands-36744.herokuapp.com/home">Visit Musique</a>
+                </article>
             </div>
     
         )
