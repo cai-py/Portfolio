@@ -29,24 +29,36 @@ class App extends React.Component {
 
     render = () => {
       return (
-        <div className="container w-11/12 max-w-6xl">
+        <div className="container">
+            <div>Hello world</div>
             <NavBar 
                 about={this.about}
                 projects={this.projects}
                 current={this.current}
             />
-            <div className="page text-pallet-100 border border-pallet-1100 bg-pallet-900 mt-3">
-                {(this.state.page == 'about')
-                    ?<About />:null
-                }
-                {(this.state.page === 'projects')
-                    ?<Projects />:null
-                }
-                {(this.state.page === 'current')
-                    ?<Current />:null
-                }
+            <div className="main-cont-container">
+                    <div className="card">
+                        <img src="../my_pfp.jpeg" alt="profile picture"></img>
+                        <h1>Cairo Flores</h1>
+                        <h3>Javascript Developer</h3>
+                        <div className="icon">
+                            <i className="fab fa-instagram fa-2x"></i>
+                            <i className="fab fa-github fa-2x"></i>
+                            <i className="fab fa-twitter fa-2x"></i>
+                        </div>
+                    </div>
+                <div className="page text-pallet-100 border-pallet-1100 bg-pallet-900 mt-3">
+                    {(this.state.page == 'about')
+                        ?<About />:null
+                    }
+                    {(this.state.page === 'projects')
+                        ?<Projects />:null
+                    }
+                    {(this.state.page === 'current')
+                        ?<Current />:null
+                    }
+                </div>
             </div>
-            
         </div>
       )
     }
