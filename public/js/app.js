@@ -30,7 +30,6 @@ class App extends React.Component {
     render = () => {
       return (
         <div className="container">
-            <div>Hello world</div>
             <NavBar 
                 about={this.about}
                 projects={this.projects}
