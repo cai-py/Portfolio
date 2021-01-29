@@ -1,0 +1,265 @@
+$pallet1: #f5f4f4;
+$pallet2: #cae4db;
+$pallet3: #cdac81;
+$pallet4: #00303f;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $pallet4;
+    margin: 0;
+    padding: 0;
+
+    // inner 
+    display: flex;
+}
+.container {
+    border-radius: 15px;
+    
+    // inner
+    height: 600px;
+    width: 90%;
+    min-width: 900px;
+    max-width: 1300px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: $pallet1;
+    display: flex;
+    justify-content: space-between;
+
+    .introCard {
+        border-radius: 15px;
+
+        // inner 
+        width: 350px;
+        height: 100%;
+        min-width: 350px;
+        margin-right: 20px;
+        background: $pallet4;
+        cursor: pointer;
+        position: relative;
+        flex-direction: column;
+        overflow: hidden;
+
+        // inner card transitions
+        img {
+            width: 40%;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translate(-50%) translateY(50px);
+            transition: all 0.6s;
+        }
+        &:hover img {
+            transform: translate(-50%) translateY(0px);
+        }
+        &:hover h1 {
+            transform: translate(-50%) translateY(0px);
+        }
+        &:hover h3 {
+            transform: translate(-50%) translateY(0px);
+        }
+        h1,
+        h3 {
+            // original
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            left: 50%;
+            transform: translate(-50%) translateY(50px);
+            font-family: "Times New Roman", Times, serif;
+            transition: all 0.6s;
+            
+            //custom 
+            color: $pallet1;
+        }
+        h1 {
+            top: 200px;
+        }
+        h3 {
+            top: 250px;
+        }
+
+        // icon colors
+        .icon i:nth-child(1) {
+            color: $pallet3;
+        }
+        .icon i:nth-child(2) {
+            color: $pallet3;
+        }
+        .icon i:nth-child(3) {
+            color: $pallet3;
+        }
+
+        // icon transitions 
+        .icon {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .icon i {
+            margin: 10px;
+        }
+        .icon i:nth-child(1),
+        .icon i:nth-child(3) {
+            transform: translateY(100px);
+            transition: all 0.6s;
+        }
+        .icon i:nth-child(2) {
+            transform: translateY(100px);
+            transition: all 0.6s;
+        }
+        &:hover .icon i:nth-child(1),
+        &:hover .icon i:nth-child(3) {
+            transform: translateY(15px);
+        }
+        &:hover .icon i:nth-child(2) {
+            transform: translateY(-10px);
+        }
+    }
+    .details{
+        border-radius: 15px;
+
+        // inner 
+        width: 100%;
+        height: 100%;
+        padding: 0px 15px;
+        background: $pallet4;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        .navBar {
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .currentPage {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                color: $pallet1;
+                //background-color: orange; // change
+                h1{
+                    margin: auto;
+                }
+            }
+            .navOptions {
+                height: 100%;
+                width: 35%;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                //background-color: yellow; // change
+                button {
+                    // margin: auto;
+                    width: 150px;
+                    height: 40px;
+                    font-size: 18px;
+                    margin: auto;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 8px;
+                    
+                }
+            }
+        }
+        .content {
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            // background-color: blue;
+            .aboutMePage {
+                // background-color: yellow;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                .personalBrandStatement {
+                    width: 90%;
+                    height: fit-content;
+                    max-width: 480px;
+                    padding: 0px 10px;
+                    margin: 15px 0px;
+                    border-left: 3px solid $pallet1;
+                    color: $pallet1;
+                }
+                .skillCardCont {
+                    height: 80%;
+                    width: 100%;
+                    margin: auto;
+                    // background-color: orange;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .skillCard {
+                        width: 28%;
+                        height: 38%;
+                        background-color: $pallet3;
+                        border-radius: 15px;
+                        padding: 10px;
+                        color: $pallet2;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h3 {
+                            font-size: 30px;
+                            //padding: 0px 5px;
+                            //border-left: 1px solid;
+                            border-bottom: 1px solid;
+                            margin: 0 0 5px;
+                        }
+                    }
+                }
+            }
+            .projectsPage {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                //flex-direction: column;
+                //background: pink;
+                .projectCardCont {
+                    height: 80%;
+                    width: 100%;
+                    margin: 40px 0;
+                    //background-color: orange;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .projectCard {
+                        width: 28%;
+                        height: 38%;
+                        background-color: $pallet3;
+                        border-radius: 15px;
+                        padding: 0;
+                        //overflow: hidden;
+                        color: $pallet2;
+                    }
+                    .projectCard:hover {
+                        cursor: pointer;
+                    }
+                    .musique {
+                        background-image: url(../komono/musique.png);
+                    }
+                    .theOffice {
+                        background-image: url(../komono/theOffice.png);
+                    }
+                    .re-did-it {
+                        background-image: url(../komono/re-did-it.png);
+                    }
+                    .MuSe {
+                        background-image: url(../komono/MuSe.png);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
