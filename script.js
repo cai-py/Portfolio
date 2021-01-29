@@ -44,6 +44,11 @@ function openMusique() {
 function openTheOffice() {
     window.open('https://gentle-cove-52214.herokuapp.com/')
 }
+
+function openReDidIt() {
+    window.open("https://re-did-it.herokuapp.com/")
+}
+
 function openMuSe() {
     window.open('https://muse-music.herokuapp.com/#')
 }
